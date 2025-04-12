@@ -1,0 +1,14 @@
+/* src/styles/variables.css */
+
+/* Define Colors */
+:root {
+  --main-black: #000000;
+  --main-white: #ffffff;
+  --main-blue: #1649ff;
+  --main-blue-dark: #0336ec;
+}
+
+/* Define Fonts */
+:root {
+  --main-font: "Poppins", sans-serif;
+}
