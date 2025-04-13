@@ -6,6 +6,7 @@
   background-color: var(--main-black);
   height: 94px;
   align-content: center;
+  user-select: none;
 }
 
 .navbar .contact-button {
