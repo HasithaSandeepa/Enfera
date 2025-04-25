@@ -6,6 +6,12 @@ import Navbar from "./components/Navbar.jsx";
 import "./index.css";
 import Footer from "./components/Footer.jsx";
 
+
+
+
+
+
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>

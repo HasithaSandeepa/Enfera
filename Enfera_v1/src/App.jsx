@@ -10,9 +10,9 @@ import AssistantCard from "./components/AssistantCard";
 function App() {
   return (
     <>
-      {/* <AppRoutes /> */}
-      <Home />
-      {/* <AssistantCard /> */}
+      <AppRoutes />
+      
+      
     </>
   );
 }
