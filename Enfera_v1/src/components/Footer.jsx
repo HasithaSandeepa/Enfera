@@ -1,86 +1,67 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../styles/Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        {/* Navigation Links */}
-        <div className="footer-section links-section">
-          <h4>Company</h4>
-          <ul>
-            <li>
-              <Link to="/portfolio">Portfolio</Link>
-            </li>
-            <li>
-              <Link to="/blog">Blog</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact Us</Link>
-            </li>
-          </ul>
-        </div>
+    <footer className="bg-gradient-to-r from-gray-900 via-indigo-900 to-purple-900 text-white py-12 px-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
 
-        {/* Contact Information */}
-        <div className="footer-section services-section">
-          <h4>Our Services</h4>
-          <p>Dedicated Development Teams</p>
-          <p>User Centric Design</p>
-          <p>AI and Automation</p>
-          <p>Flyer Post Design</p>
-          <p>Mobile App Development</p>
-          <p>Custom Web Solutions</p>
-        </div>
-
-        {/* Logo and Description */}
-        <div className=" footer-section logo-section left-section">
+        {/* Logo and Social */}
+        <div className="space-y-4">
           <img
             src="src/assets/images/Logo.png"
             alt="EnFera Logo"
-            className="footer-logo"
+            className="w-32 h-auto object-contain"
           />
-
-          {/* Social Media Links */}
-          <div className="footer-section social-section">
-            <h4>Follow Us</h4>
-            <div className="social-icons">
-              <a
-                href="https://facebook.com/enfera"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="src/assets/icons/fb.png" alt="Facebook" />
-              </a>
-              <a
-                href="https://linkedin.com/company/enfera"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="src/assets/icons/linkedin.png" alt="LinkedIn" />
-              </a>
-              <a
-                href="https://instagram.com/enfera"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img src="src/assets/icons/ig.png" alt="Instagram" />
-              </a>
-            </div>
+          <p className="text-sm text-gray-300">
+            Delivering innovation and excellence through design and development.
+          </p>
+          <div className="flex space-x-4 mt-4">
+            <a href="https://facebook.com/enfera" target="_blank" rel="noopener noreferrer">
+              <img src="src/assets/icons/fb.png" alt="Facebook" className="w-6 h-6 hover:scale-110 transition" />
+            </a>
+            <a href="https://linkedin.com/company/enfera" target="_blank" rel="noopener noreferrer">
+              <img src="src/assets/icons/linkedin.png" alt="LinkedIn" className="w-6 h-6 hover:scale-110 transition" />
+            </a>
+            <a href="https://instagram.com/enfera" target="_blank" rel="noopener noreferrer">
+              <img src="src/assets/icons/ig.png" alt="Instagram" className="w-6 h-6 hover:scale-110 transition" />
+            </a>
           </div>
+        </div>
+
+        {/* Links */}
+        <div>
+          <h4 className="text-lg font-semibold mb-4">Company</h4>
+          <ul className="space-y-2 text-gray-300 text-sm">
+            <li><Link to="/portfolio" className="hover:text-white transition">Portfolio</Link></li>
+            <li><Link to="/blog" className="hover:text-white transition">Blog</Link></li>
+            <li><Link to="/about" className="hover:text-white transition">About</Link></li>
+            <li><Link to="/contact" className="hover:text-white transition">Contact Us</Link></li>
+          </ul>
+        </div>
+
+        {/* Services */}
+        <div>
+          <h4 className="text-lg font-semibold mb-4">Our Services</h4>
+          <ul className="space-y-2 text-gray-300 text-sm">
+            <li>Dedicated Development Teams</li>
+            <li>User Centric Design</li>
+            <li>AI and Automation</li>
+            <li>Flyer Post Design</li>
+            <li>Mobile App Development</li>
+            <li>Custom Web Solutions</li>
+          </ul>
         </div>
       </div>
 
       {/* Footer Bottom */}
-      <div className="footer-bottom">
+      <div className="mt-12 border-t border-gray-700 pt-6 text-center text-sm text-gray-400">
         <p>&copy; {new Date().getFullYear()} EnFera. All rights reserved.</p>
-        <p>Privacy Policy | Terms and Conditions</p>
+        <p className="mt-1">Privacy Policy | Terms and Conditions</p>
       </div>
     </footer>
   );
 };
 
 export default Footer;
+ 

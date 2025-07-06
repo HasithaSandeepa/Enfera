@@ -1,25 +1,34 @@
 import React from "react";
-import "../styles/AssistantCard.css";
+import AssistantImage from "../assets/images/Assistant.png"; // Adjust path if needed
 
 const AssistantCard = () => {
   return (
-    <div className="assistant-card">
-      {/* Left Side - Text Content */}
-      <div className="assistant-content">
-        <h2 className="assistant-title">Need Assistant???</h2>
-        <p className="assistant-description">
-          Let’s assess your needs and craft the perfect strategy for your
-          business.
+    <div className="bg-gradient-to-r from-blue-50 to-indigo-100 rounded-2xl shadow-lg p-6 md:p-10 flex flex-col md:flex-row items-center justify-between gap-8 my-16 max-w-6xl mx-auto">
+      
+      {/* Text Content */}
+      <div className="flex-1 text-center md:text-left">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          Need Assistance?
+        </h2>
+        <p className="text-lg text-gray-600 mb-6 max-w-md">
+          Let's assess your needs and craft the perfect strategy for your business.
         </p>
-        <button className="assistant-button">
-          Contact Us <span className="arrow">▶</span>
-        </button>
+        <a
+          href="https://wa.me/94779458618"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-6 py-3 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-full font-semibold shadow-md hover:scale-105 transition-transform"
+        >
+          Contact Us <span className="ml-2">▶</span>
+        </a>
       </div>
-      <div className="assistant-image-container">
+      
+      {/* Image */}
+      <div className="flex-1">
         <img
-          src="src/assets/images/Assistant.png"
-          alt="Project Image"
-          className="project-card-image"
+          src={AssistantImage}
+          alt="Assistant"
+          className="w-full max-w-sm rounded-xl drop-shadow-lg"
         />
       </div>
     </div>
