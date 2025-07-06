@@ -143,7 +143,7 @@ export default function About() {
         </div>
       </div>
       
-      {/* ... Rest of your About page content ... */}
+      
       
       <Footer />
     </div>
