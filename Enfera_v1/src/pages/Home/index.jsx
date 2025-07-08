@@ -13,12 +13,11 @@ import Footer from "../../components/Footer";
 import Client1 from "../../assets/images/PH2VQ26FQVEXPF3BKILGSEITSQ.jpg";
 import Client2 from "../../assets/images/download (2).jpg";
 
-
 export default function Home() {
   const stats = [
-    { number: 100, label: "Projects Delivered" },
+    { number: 20, label: "Projects Delivered" },
     { number: 92, label: "Client Satisfaction (%)" },
-    { number: 90, label: "Clients" },
+    { number: 10, label: "Clients" },
   ];
 
   return (
@@ -39,16 +38,27 @@ export default function Home() {
         <div className="relative z-10 h-full flex items-center justify-center px-4">
           <div className="max-w-4xl text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              We Craft <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Exceptional</span> Digital Products
+              We Craft{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+                Exceptional
+              </span>{" "}
+              Digital Products
             </h1>
             <p className="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
-              Transforming your vision into innovative digital experiences that drive business growth
+              Transforming your vision into innovative digital experiences that
+              drive business growth
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/services" className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:from-blue-600 hover:to-purple-700">
+              <Link
+                to="/services"
+                className="px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-medium shadow-lg hover:shadow-xl transition-all duration-300 hover:from-blue-600 hover:to-purple-700"
+              >
                 Explore Services
               </Link>
-              <Link to="/contact" className="px-8 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white/10 transition duration-300">
+              <Link
+                to="/contact"
+                className="px-8 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white/10 transition duration-300"
+              >
                 Contact Us
               </Link>
             </div>
@@ -68,11 +78,16 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">Who</span> We Are
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
+                Who
+              </span>{" "}
+              We Are
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mb-8" />
             <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-              Enferra delivers innovative, scalable, and high-performance digital solutions, specializing in custom software, web, and mobile app development.
+              Enferra delivers innovative, scalable, and high-performance
+              digital solutions, specializing in custom software, web, and
+              mobile app development.
             </p>
           </div>
 
@@ -91,7 +106,9 @@ export default function Home() {
                   duration={3}
                   className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 mb-4"
                 />
-                <div className="text-xl font-medium text-gray-800">{stat.label}</div>
+                <div className="text-xl font-medium text-gray-800">
+                  {stat.label}
+                </div>
               </motion.div>
             ))}
           </div>
@@ -100,10 +117,14 @@ export default function Home() {
           <section id="services" className="py-10">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">Services</span>
+                Our{" "}
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600">
+                  Services
+                </span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                We offer custom-tailored digital solutions built for innovation, performance, and results.
+                We offer custom-tailored digital solutions built for innovation,
+                performance, and results.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -117,7 +138,9 @@ export default function Home() {
                 >
                   <div className="flex items-center mb-4">
                     <div className="flex-shrink-0 bg-gradient-to-br from-blue-500 to-purple-600 text-white rounded-xl p-3 mr-4">
-                      <span className="text-xl font-bold">{service.number}</span>
+                      <span className="text-xl font-bold">
+                        {service.number}
+                      </span>
                     </div>
                     <h3 className="text-xl font-semibold text-gray-800 group-hover:text-blue-600 transition">
                       {service.title}
@@ -149,7 +172,9 @@ export default function Home() {
                     <div className="bg-gradient-to-r from-blue-100 to-purple-100 rounded-full p-3 mr-4 group-hover:from-blue-200 group-hover:to-purple-200">
                       <FiCheck size={24} className="text-blue-600" />
                     </div>
-                    <h4 className="text-lg font-semibold text-gray-800">{reason}</h4>
+                    <h4 className="text-lg font-semibold text-gray-800">
+                      {reason}
+                    </h4>
                   </div>
                 </motion.div>
               ))}
@@ -158,8 +183,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-indigo-900 text-white">
+      {/* Testimonials
+      <section className="py-20 bg-gradient-to-br from-gray-900 to-indigo-900 text-white ">
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold mb-6">What Our Clients Say</h2>
@@ -167,49 +192,57 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {["Sarah Johnson", "Michael Chen"].map((name, i) => (
-  <motion.div
-    key={i}
-    initial={{ opacity: 0, y: 30 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.6, delay: i * 0.3 }}
-    className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20"
-  >
-    <p className="text-gray-200 mb-6 italic">
-      {i === 0
-        ? '"Enferra transformed our digital presence with their innovative solutions. Their team delivered beyond our expectations."'
-        : '"The attention to detail and commitment to quality sets Enferra apart. They truly understand business needs."'}
-    </p>
-    <div className="flex items-center">
-      <img
-        src={i === 0 ? Client1 : Client2}
-        alt={`Client ${i + 1}`}
-        className="w-16 h-16 rounded-xl object-cover mr-4"
-      />
-      <div>
-        <div className="font-bold">{name}</div>
-        <div className="text-gray-300">{i === 0 ? "CTO, TechInnovate" : "CEO, Global Solutions"}</div>
-      </div>
-    </div>
-  </motion.div>
-))}
-
-            
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: i * 0.3 }}
+                className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20"
+              >
+                <p className="text-gray-200 mb-6 italic">
+                  {i === 0
+                    ? '"Enferra transformed our digital presence with their innovative solutions. Their team delivered beyond our expectations."'
+                    : '"The attention to detail and commitment to quality sets Enferra apart. They truly understand business needs."'}
+                </p>
+                <div className="flex items-center">
+                  <img
+                    src={i === 0 ? Client1 : Client2}
+                    alt={`Client ${i + 1}`}
+                    className="w-16 h-16 rounded-xl object-cover mr-4"
+                  />
+                  <div>
+                    <div className="font-bold">{name}</div>
+                    <div className="text-gray-300">
+                      {i === 0 ? "CTO, TechInnovate" : "CEO, Global Solutions"}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-r from-blue-500 to-purple-600">
         <div className="container mx-auto px-4 max-w-4xl text-center">
-          <h2 className="text-3xl font-bold text-white mb-6">Ready to Transform Your Business?</h2>
+          <h2 className="text-3xl font-bold text-white mb-6">
+            Ready to Transform Your Business?
+          </h2>
           <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
             Let's discuss how we can help you achieve your digital goals
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Link to="/contact" className="px-8 py-3 bg-white text-blue-600 rounded-full font-medium shadow-lg hover:shadow-xl transition duration-300 hover:bg-gray-100">
+            <Link
+              to="/contact"
+              className="px-8 py-3 bg-white text-blue-600 rounded-full font-medium shadow-lg hover:shadow-xl transition duration-300 hover:bg-gray-100"
+            >
               Get in Touch
             </Link>
-            <Link to="/portfolio" className="px-8 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white/10 transition duration-300">
+            <Link
+              to="/portfolio"
+              className="px-8 py-3 border-2 border-white text-white rounded-full font-medium hover:bg-white/10 transition duration-300"
+            >
               View Our Work
             </Link>
           </div>

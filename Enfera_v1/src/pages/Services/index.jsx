@@ -20,13 +20,13 @@ const ServiceCard = ({ number, title, description, image, onClick }) => {
       onClick={onClick}
       className="group relative overflow-hidden rounded-2xl shadow-xl transition-all duration-500 hover:shadow-2xl cursor-pointer h-72"
     >
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
         style={{ backgroundImage: `url(${image})` }}
       >
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/70 to-black/90"></div>
       </div>
-      
+
       <div className="relative p-6 h-full flex flex-col justify-end text-white z-10">
         <div className="flex items-center mb-2">
           <div className="bg-blue-600 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold mr-3">
@@ -40,8 +40,17 @@ const ServiceCard = ({ number, title, description, image, onClick }) => {
             Learn More
           </button>
           <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
-              <path fillRule="evenodd" d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 text-blue-400"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L12.586 11H5a1 1 0 110-2h7.586l-2.293-2.293a1 1 0 010-1.414z"
+                clipRule="evenodd"
+              />
             </svg>
           </div>
         </div>
@@ -59,42 +68,48 @@ export default function Services() {
     {
       number: "1",
       title: "Dedicated Development Teams",
-      description: "Expand your team with top-tier professionals dedicated to accelerating your project's success!",
+      description:
+        "Expand your team with top-tier professionals dedicated to accelerating your project's success!",
       image: devTeamImage,
       path: "/services/dedicated-development-team",
     },
     {
       number: "2",
       title: "User-Centric Design",
-      description: "Transform user experiences with intuitive and engaging designs that captivate and delight!",
+      description:
+        "Transform user experiences with intuitive and engaging designs that captivate and delight!",
       image: devTeamImage2,
       path: "/services/user-centric-design",
     },
     {
       number: "3",
       title: "Flyer Post Design",
-      description: "Make a lasting impression with visually compelling, high-impact flyers that boost your brand!",
+      description:
+        "Make a lasting impression with visually compelling, high-impact flyers that boost your brand!",
       image: devTeamImage3,
       path: "/services/service-unavailable",
     },
     {
       number: "4",
       title: "AI and Automation",
-      description: "Empower your business with cutting-edge AI and automation solutions that drive efficiency and innovation.",
+      description:
+        "Empower your business with cutting-edge AI and automation solutions that drive efficiency and innovation.",
       image: devTeamImage4,
       path: "/services/service-unavailable",
     },
     {
       number: "5",
       title: "Mobile App Development",
-      description: "Build seamless high-performance mobile apps that connect, engage and grow your audience!",
+      description:
+        "Build seamless high-performance mobile apps that connect, engage and grow your audience!",
       image: devTeamImage5,
-      path: "/services/mobile-app-development", 
+      path: "/services/mobile-app-development",
     },
     {
       number: "6",
       title: "Custom Web Solutions",
-      description: "Turn your ideas into stunning, high-performance websites that leave a digital footprint!",
+      description:
+        "Turn your ideas into stunning, high-performance websites that leave a digital footprint!",
       image: devTeamImage6,
       path: "/services/custom-web-solutions",
     },
@@ -103,7 +118,7 @@ export default function Services() {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-gray-50 to-white">
       <Navbar />
-      
+
       {/* Hero Section */}
       <div className="relative overflow-hidden py-24 md:py-32 bg-gradient-to-r from-blue-900 to-indigo-900">
         <div className="absolute inset-0 opacity-10">
@@ -115,7 +130,9 @@ export default function Services() {
               Our Premium Services
             </h1>
             <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
-              Enfera leads with excellence in every endeavor. We are committed to delivering superior quality products, always surpassing customer expectations.
+              Enfera leads with excellence in every endeavor. We are committed
+              to delivering superior quality products, always surpassing
+              customer expectations.
             </p>
           </div>
         </div>
@@ -126,14 +143,17 @@ export default function Services() {
         <div className="text-center mb-16">
           <div className="inline-flex items-center mb-4">
             <div className="w-10 h-0.5 bg-blue-600 mr-4"></div>
-            <span className="text-blue-600 font-bold uppercase tracking-wider">What We Offer</span>
+            <span className="text-blue-600 font-bold uppercase tracking-wider">
+              What We Offer
+            </span>
             <div className="w-10 h-0.5 bg-blue-600 ml-4"></div>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Excellence In Every Endeavor
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We deliver innovative solutions tailored to your business needs, driving growth and success.
+            We deliver innovative solutions tailored to your business needs,
+            driving growth and success.
           </p>
         </div>
 
@@ -163,7 +183,8 @@ export default function Services() {
                 Ready to Transform Your Business?
               </h3>
               <p className="text-blue-100 mb-6 max-w-xl">
-                Contact us today to discuss how our services can help you achieve your goals and drive growth.
+                Contact us today to discuss how our services can help you
+                achieve your goals and drive growth.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 {/* <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-full transition duration-300">
@@ -176,38 +197,37 @@ export default function Services() {
             </div>
             <div className="md:w-1/3 hidden md:block">
               <img
-  src={ctaImage}
-  alt="Business Transformation"
-  className="w-full h-48 object-cover rounded-xl"
-/>
-
+                src={ctaImage}
+                alt="Business Transformation"
+                className="w-full h-48 object-cover rounded-xl"
+              />
             </div>
           </div>
         </div>
       </div>
-      
+
       {/* Stats Section */}
-          <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl shadow-xl p-8 mb-16">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-              <div className="text-center">
-                <div className="text-4xl font-bold text-white mb-2">100+</div>
-                <div className="text-blue-100 font-medium">Projects Completed</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-white mb-2">92%</div>
-                <div className="text-blue-100 font-medium">Client Satisfaction</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-white mb-2">20+</div>
-                <div className="text-blue-100 font-medium">Expert Team Members</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold text-white mb-2">4+</div>
-                <div className="text-blue-100 font-medium">Years Experience</div>
-              </div>
-            </div>
+      <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl shadow-xl p-8 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div className="text-center">
+            <div className="text-4xl font-bold text-white mb-2">20+</div>
+            <div className="text-blue-100 font-medium">Projects Completed</div>
           </div>
-      
+          <div className="text-center">
+            <div className="text-4xl font-bold text-white mb-2">92%</div>
+            <div className="text-blue-100 font-medium">Client Satisfaction</div>
+          </div>
+          <div className="text-center">
+            <div className="text-4xl font-bold text-white mb-2">15+</div>
+            <div className="text-blue-100 font-medium">Expert Team Members</div>
+          </div>
+          <div className="text-center">
+            <div className="text-4xl font-bold text-white mb-2">2+</div>
+            <div className="text-blue-100 font-medium">Years Experience</div>
+          </div>
+        </div>
+      </div>
+
       <Footer />
     </div>
   );
