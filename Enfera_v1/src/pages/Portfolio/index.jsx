@@ -279,19 +279,19 @@ const SampleProjects = () => {
           <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl shadow-xl p-8 mb-16">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
               <div className="text-center">
-                <div className="text-4xl font-bold text-white mb-2">200+</div>
+                <div className="text-4xl font-bold text-white mb-2">100+</div>
                 <div className="text-blue-100 font-medium">Projects Completed</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-white mb-2">98%</div>
+                <div className="text-4xl font-bold text-white mb-2">92%</div>
                 <div className="text-blue-100 font-medium">Client Satisfaction</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-white mb-2">50+</div>
+                <div className="text-4xl font-bold text-white mb-2">20+</div>
                 <div className="text-blue-100 font-medium">Expert Team Members</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold text-white mb-2">15+</div>
+                <div className="text-4xl font-bold text-white mb-2">4+</div>
                 <div className="text-blue-100 font-medium">Years Experience</div>
               </div>
             </div>

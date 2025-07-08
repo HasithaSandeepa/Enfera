@@ -10,7 +10,7 @@ import devTeamImage3 from "../../assets/images/leone-venter-VieM9BdZKFo-unsplash
 import devTeamImage4 from "../../assets/images/aidan-hancock-UtzrcidfCsk-unsplash.jpg";
 import devTeamImage5 from "../../assets/images/david-svihovec-y625OUyhTG8-unsplash.jpg";
 import devTeamImage6 from "../../assets/images/nordwood-themes-Cli7eZZzfyM-unsplash.jpg";
-
+import ctaImage from "../../assets/images/photo-1556761175-5973dc0f32e7.avif";
 // Service Card Component
 const ServiceCard = ({ number, title, description, image, onClick }) => {
   return (
@@ -166,44 +166,47 @@ export default function Services() {
                 Contact us today to discuss how our services can help you achieve your goals and drive growth.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-full transition duration-300">
+                {/* <button className="bg-white text-blue-600 hover:bg-gray-100 font-semibold py-3 px-8 rounded-full transition duration-300">
                   Get Started
-                </button>
+                </button> */}
                 <button className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-600 font-semibold py-3 px-8 rounded-full transition duration-300">
                   Schedule a Call
                 </button>
               </div>
             </div>
             <div className="md:w-1/3 hidden md:block">
-              <div className="bg-gray-200 border-2 border-dashed rounded-xl w-full h-48" />
+              <img
+  src={ctaImage}
+  alt="Business Transformation"
+  className="w-full h-48 object-cover rounded-xl"
+/>
+
             </div>
           </div>
         </div>
       </div>
       
       {/* Stats Section */}
-      <div className="bg-gray-50 py-16">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">200+</div>
-              <div className="text-gray-600 font-medium">Projects Completed</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">98%</div>
-              <div className="text-gray-600 font-medium">Client Satisfaction</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">50+</div>
-              <div className="text-gray-600 font-medium">Expert Team Members</div>
-            </div>
-            <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600 mb-2">15+</div>
-              <div className="text-gray-600 font-medium">Years Experience</div>
+          <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-2xl shadow-xl p-8 mb-16">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+              <div className="text-center">
+                <div className="text-4xl font-bold text-white mb-2">100+</div>
+                <div className="text-blue-100 font-medium">Projects Completed</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-white mb-2">92%</div>
+                <div className="text-blue-100 font-medium">Client Satisfaction</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-white mb-2">20+</div>
+                <div className="text-blue-100 font-medium">Expert Team Members</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-white mb-2">4+</div>
+                <div className="text-blue-100 font-medium">Years Experience</div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
       
       <Footer />
     </div>

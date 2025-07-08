@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
+import LogoImage from "../assets/images/Logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,14 +13,17 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-gradient-to-r from-blue-900 to-purple-900 shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-       <img 
-  src="src/assets/images/Logo.png" 
-  alt="Enferra Logo" 
-  className="w-32 max-h-12 object-contain"  // w-32 = width, max-h-12 (~48px) = height cap
-/>
-
+    <nav className="sticky top-0 z-50 h-20 bg-gradient-to-r from-blue-900 to-purple-900 shadow-lg">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center h-full">
+        
+        {/* ✅ LOGO (scaled up but doesn't affect nav height) */}
+        <div className="relative h-full">
+          <img
+            src={LogoImage}
+            alt="Enferra Logo"
+            className="h-35 -mt-8 object-contain" // h-24 = large logo; -mt-3 lifts it to avoid navbar height increase
+          />
+        </div>
 
         {/* Desktop Nav */}
         <ul className="hidden md:flex items-center space-x-8 text-white font-medium">
@@ -38,13 +42,6 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-            <NavLink to="/create-account">
-              <button className="px-4 py-2 bg-white text-blue-700 rounded-full font-semibold hover:bg-blue-100 transition">
-                Create Account
-              </button>
-            </NavLink>
-          </li>
-          <li>
             <NavLink to="/contact">
               <button className="px-4 py-2 border border-white text-white rounded-full hover:bg-white hover:text-blue-800 transition">
                 Contact Us
@@ -53,7 +50,7 @@ const Navbar = () => {
           </li>
         </ul>
 
-        {/* Hamburger */}
+        {/* Mobile Hamburger */}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden text-white focus:outline-none"
@@ -102,13 +99,6 @@ const Navbar = () => {
                 </NavLink>
               </li>
             ))}
-            <li>
-              <NavLink to="/create-account" onClick={() => setIsOpen(false)}>
-                <button className="w-full px-4 py-2 bg-white text-blue-700 rounded-full hover:bg-blue-100 transition font-semibold">
-                  Create Account
-                </button>
-              </NavLink>
-            </li>
             <li>
               <NavLink to="/contact" onClick={() => setIsOpen(false)}>
                 <button className="w-full px-4 py-2 border border-white text-white rounded-full hover:bg-white hover:text-blue-800 transition">

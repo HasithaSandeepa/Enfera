@@ -16,9 +16,9 @@ import Client2 from "../../assets/images/download (2).jpg";
 
 export default function Home() {
   const stats = [
-    { number: 200, label: "Projects Delivered" },
-    { number: 98, label: "Client Satisfaction (%)" },
-    { number: 150, label: "Clients" },
+    { number: 100, label: "Projects Delivered" },
+    { number: 92, label: "Client Satisfaction (%)" },
+    { number: 90, label: "Clients" },
   ];
 
   return (
@@ -58,12 +58,12 @@ export default function Home() {
 
       {/* Who We Are */}
       <section className="py-20 relative overflow-hidden">
-        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] opacity-30">
+        {/* <div className="absolute -top-40 -left-40 w-[600px] h-[600px] opacity-30">
           <img src="src/assets/images/BlueEllipse.png" alt="blue background" className="w-full h-full object-contain" />
-        </div>
-        <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] opacity-30">
+        </div> */}
+        {/* <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] opacity-30">
           <img src="src/assets/images/GrayEllipse.png" alt="gray background" className="w-full h-full object-contain" />
-        </div>
+        </div> */}
 
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <div className="text-center mb-16">
