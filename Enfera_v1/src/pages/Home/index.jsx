@@ -42,7 +42,7 @@ export default function Home() {
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
                 Exceptional
               </span>{" "}
-              Digital Products
+              Digital Product
             </h1>
             <p className="text-xl text-gray-200 mb-10 max-w-2xl mx-auto">
               Transforming your vision into innovative digital experiences that
