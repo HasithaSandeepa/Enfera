@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import LogoImage from "../assets/images/Logo.png";
 
 const Footer = () => {
   return (
@@ -9,22 +10,22 @@ const Footer = () => {
         {/* Logo and Social */}
         <div className="space-y-4">
           <img
-            src="src/assets/images/Logo.png"
-            alt="EnFera Logo"
-            className="w-32 h-auto object-contain"
-          />
+                      src={LogoImage}
+                      alt="Enferra Logo"
+                      className="h-35 -mt-8 object-contain" // h-24 = large logo; -mt-3 lifts it to avoid navbar height increase
+                    />
           <p className="text-sm text-gray-300">
             Delivering innovation and excellence through design and development.
           </p>
           <div className="flex space-x-4 mt-4">
             <a href="https://facebook.com/enfera" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/icons/fb.png" alt="Facebook" className="w-6 h-6 hover:scale-110 transition" />
+              <img src="src/assets/images/fb.png" alt="Facebook" className="w-6 h-6 hover:scale-110 transition" />
             </a>
             <a href="https://linkedin.com/company/enfera" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/icons/linkedin.png" alt="LinkedIn" className="w-6 h-6 hover:scale-110 transition" />
+              <img src="src/assets/images/linkedin.png" alt="LinkedIn" className="w-6 h-6 hover:scale-110 transition" />
             </a>
             <a href="https://instagram.com/enfera" target="_blank" rel="noopener noreferrer">
-              <img src="src/assets/icons/ig.png" alt="Instagram" className="w-6 h-6 hover:scale-110 transition" />
+              <img src="src/assets/images/ig.png" alt="Instagram" className="w-6 h-6 hover:scale-110 transition" />
             </a>
           </div>
         </div>
