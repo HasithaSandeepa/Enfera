@@ -28,7 +28,7 @@ export default function Home() {
       <div className="relative h-screen">
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src="src/assets/images/HeroImage.jpeg"
+            src="src/assets/images/HeroImage.jpg"
             alt="Digital Innovation"
             className="w-full h-full object-cover"
           />
